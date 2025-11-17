@@ -1,0 +1,23 @@
+#checkout {
+    .checkout-container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        border: 1px solid rgb(44, 98, 107);
+        border-radius: 10px;
+        text-align: left;
+
+        .checkout-item {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    hr {
+        margin-top: 10px;
+        height: 2px;
+        background-color: rgb(44, 98, 107);
+        border: none;
+        width: 100%;
+    }
+}

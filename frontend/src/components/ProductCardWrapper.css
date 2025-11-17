@@ -1,0 +1,8 @@
+.product-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(301px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}

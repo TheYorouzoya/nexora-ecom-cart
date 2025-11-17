@@ -1,0 +1,56 @@
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    gap: 10px;
+    background-color: rgb(51, 70, 82);
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        max-width: 1300px;    
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .page-buttons {
+        padding: 20px;
+    }
+
+    .nav-cart {
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .cart-badge:not(:empty) {
+        position: absolute; 
+        top: -8px; 
+        right: 0;
+        background-color: rgb(44, 98, 107);
+        color: white;
+        border-radius: 50%;
+        padding: 4px 8px;
+        font-size: 10px; 
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    a {
+        color: white;
+        height: 100%;
+        padding: 20px;
+        overflow: hidden;
+        text-decoration: inherit;
+    }
+
+    a:hover {
+        background-color: rgb(48, 48, 48);
+        color: white;
+    }
+}

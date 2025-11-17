@@ -1,0 +1,19 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./backend/src:/app/src
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    env_file:
+      - ./frontend/.env
+    volumes:
+      - ./frontend/src:/app/src

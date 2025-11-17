@@ -1,5 +1,7 @@
 const API_BASE_URL = import.meta.env.VITE_API_URL;
 
+export const PRODUCTS_ENDPOINT = "/products";
+
 async function request<T>(
     endpoint: string,
     options: RequestInit = {}
@@ -22,14 +24,16 @@ async function request<T>(
 
 export const api = {
     get: <T>(endpoint: string) => request<T>(endpoint),
-    post: <T>(endpoint: string, body?: any) =>
+    post: <T>(endpoint: string, body?: any, headers?: any) =>
         request<T>(endpoint, {
             method: "POST",
+            headers: { ...headers },
             body: body ? JSON.stringify(body) : undefined,
         }),
-    put: <T>(endpoint:string, body?: any) =>
+    put: <T>(endpoint:string, body?: any, headers?: any) =>
         request<T>(endpoint, {
             method: "PUT",
+            headers: { ...headers },
             body: body ? JSON.stringify(body) : undefined,
         }),
     del: <T>(endpoint: string) =>
