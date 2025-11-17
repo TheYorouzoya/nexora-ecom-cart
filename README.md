@@ -23,7 +23,7 @@ It serves the following routes:
 - **GET** `/api/products` : Fetches the list of all products. See [models/products.ts](./backend/src/models/product.ts) for product fields.
 - **POST** `/api/cart` : Expects an item's `itemId` and `quantity`. Adds the given product and quantity to the current cart. Returns an error response if the given parameters are invalid.
 
-> ![NOTE]
+> [!NOTE]
 > For idempotency, the provided `quantity` value **is replaced** (not incremented). Ideally, the frontend will supply an idempotency key or identifier for consistency, upon which, the quantity can be safely incremented.
 
 - **DELETE** `/api/cart/:id` : Removes the given item from the cart. The updated cart is returned as a response.
