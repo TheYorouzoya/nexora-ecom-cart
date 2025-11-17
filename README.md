@@ -41,6 +41,8 @@ The frontend app has four pages:
 - `/products`: Shows a list of all products as a grid of product cards.
 ![Product page with a grid of product cards showcasing the price and an add to cart button](./doc-images/product-page.png)
     The page is response with the number of columns shrinking along with window size.![Product page with a grid of product cards showcasing responsiveness](./doc-images/product-page-responsive.png)
-    Each item can be added to the cart by clicking the "Add to Cart" button. Further, the number of items can be increased/decreased with a button to remove the item from cart altogether.![A Product Card with a placeholder image, product title, price, and buttons to add/remove the product from the cart](./doc-images/product-card.png)
+    Each item can be added to the cart by clicking the "Add to Cart" button. Further, the number of items can be increased/decreased with a button to remove the item from cart altogether.
+
+  ![A Product Card with a placeholder image, product title, price, and buttons to add/remove the product from the cart](./doc-images/product-card.png)
 - `/cart`: Displays the current cart state with the list of items, their quantity, and price breakdown along with the total. Similar to the product page, buttons are provided to manipulate product quantity. A checkout form is at the bottom which leads to the checkout page upon successful submission.![Cart page showcasing the items with their prices and total](./doc-images/cart-page.png)
 - `/checkout`: Displays the receipt for the checked out cart with the item details and a timestamp. ![Checkout Page showcasing the receipt with the list of items and the total](./doc-images/checkout-page.png)
