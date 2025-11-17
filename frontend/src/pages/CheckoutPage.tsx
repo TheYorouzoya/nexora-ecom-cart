@@ -1,5 +1,5 @@
 import { useLocation } from "react-router";
-import { Suspense, useEffect } from "react";
+import { Suspense } from "react";
 
 import type { Receipt } from "../types";
 
